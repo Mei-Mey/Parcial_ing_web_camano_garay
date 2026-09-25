@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeFog Tech | Acerca de</title>
+    <link rel="stylesheet" href="../css/acerca.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo de EdgeFog Tech" class="logo-imagen">
+            <div>
+                <h2>EdgeFog Tech</h2>
+                <p>Computación más cerca de los datos</p>
+            </div>
+        </div>
+
+        <!-- NAVEGACIÓN -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="acercade.html" class="activo">Acerca de</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- CABECERA -->
+        <section class="pagina-titulo">
+            <span>CONOCE LA TECNOLOGÍA</span>
+            <h1>Edge & Fog Computing</h1>
+            <p>
+                Conoce sus conceptos fundamentales, características,
+                arquitectura, diferencias y algunas de sus aplicaciones.
+            </p>
+
+        </section>
+
+        <!-- EDGE COMPUTING -->
+        <section class="seccion">
+            <div class="contenido-doble">
+                <article>
+                    <span class="mini-titulo">EDGE COMPUTING</span>
+                    <h2>¿Qué es Edge Computing?</h2>
+
+                    <p>
+                        Edge Computing o computación en el borde es un modelo de
+                        computación distribuida que acerca el procesamiento de los
+                        datos al lugar donde estos son generados.
+                    </p>
+
+                    <p>
+                        En lugar de enviar toda la información directamente a un
+                        centro de datos o servicio en la nube, parte del procesamiento
+                        puede realizarse cerca de sensores, dispositivos IoT,
+                        servidores locales u otros equipos ubicados en el borde
+                        de la red.
+                    </p>
+
+                    <h3>Principales características</h3>
+
+                    <ul class="lista">
+                        <li>Procesamiento cercano al origen de los datos.</li>
+                        <li>Puede reducir la comunicación con servidores remotos.</li>
+                        <li>Menor cantidad de datos enviados hacia la nube.</li>
+                        <li>Mejor aprovechamiento del ancho de banda.</li>
+                        <li>Puede integrarse con dispositivos IoT.</li>
+                    </ul>
+                </article>
+
+                <div class="imagen-contenido">
+
+                    <img src="../img/edgec.webp"
+                         alt="Representación de Edge Computing">
+                </div>
+            </div>
+        </section>
+
+        <!-- FOG COMPUTING -->
+        <section class="seccion fondo-azul-claro">
+            <div class="contenido-doble">
+                <div class="imagen-contenido">
+                
+
+                    <img src="../img/fogc.jpg"
+                         alt="Representación de Fog Computing">
+                </div>
+
+                <article>
+                    <span class="mini-titulo">FOG COMPUTING</span>
+                    <h2>¿Qué es Fog Computing?</h2>
+
+                    <p>
+                        Fog Computing o computación en la niebla es una arquitectura
+                        distribuida que sitúa recursos de procesamiento, almacenamiento
+                        y comunicación entre los dispositivos que generan los datos
+                        y los servicios ubicados en la nube.
+                    </p>
+
+                    <p>
+                        Su objetivo es acercar determinadas capacidades informáticas
+                        a los usuarios y dispositivos sin que necesariamente todo el
+                        procesamiento tenga que realizarse directamente en el
+                        dispositivo final.
+                    </p>
+
+                    <h3>Características</h3>
+
+                    <ul class="lista">
+                        <li>Utiliza nodos de red próximos a los dispositivos.</li>
+                        <li>Funciona como una capa intermedia entre Edge y Cloud.</li>
+                        <li>Puede reducir la latencia y el tráfico hacia la nube.</li>
+                        <li>Puede administrar información de múltiples dispositivos.</li>
+                        <li>Es especialmente útil en arquitecturas IoT distribuidas.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAS -->
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <span>COMPARACIÓN</span>
+                <h2>Edge vs. Fog Computing</h2>
+                <p>
+                    Edge Computing y Fog Computing buscan acercar el procesamiento
+                    a la fuente de los datos, pero trabajan en diferentes puntos
+                    de la arquitectura.
+                </p>
+            </div>
+
+            <article>
+
+                <h3>Ubicación</h3>
+                <p>
+                    Edge Computing lleva el procesamiento directamente al borde
+                    de la red, cerca o incluso dentro de los dispositivos que
+                    generan los datos.
+                </p>
+
+                <p>
+                    Fog Computing utiliza nodos de red intermedios situados entre
+                    los dispositivos Edge y los servicios alojados en la nube.
+                </p>
+
+
+                <h3>Procesamiento de datos</h3>
+                <p>
+                    En Edge Computing, los datos pueden analizarse directamente
+                    cerca de su origen y posteriormente enviarse a la nube cuando
+                    sea necesario.
+                </p>
+
+                <p>
+                    En Fog Computing, los nodos intermedios pueden recibir,
+                    procesar, filtrar o almacenar temporalmente información
+                    procedente de varios dispositivos antes de comunicarse
+                    con la nube.
+                </p>
+
+                <h3>Seguridad</h3>
+
+                <p>
+                    El procesamiento local puede reducir la cantidad de información
+                    que debe recorrer toda la red. Sin embargo, las arquitecturas
+                    distribuidas también requieren proteger numerosos dispositivos,
+                    nodos y comunicaciones.
+                </p>
+
+                <p>
+                    En Fog Computing pueden incorporarse controles de seguridad
+                    en nodos intermedios, mientras que en Edge Computing también
+                    es necesario proteger los propios dispositivos que procesan
+                    la información.
+                </p>
+            </article>
+
+
+            <!-- TABLA -->
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+
+                        <tr>
+                            <th>Aspecto</th>
+                            <th>Edge Computing</th>
+                            <th>Fog Computing</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>Ubicación</td>
+                            <td>Cerca o dentro del dispositivo.</td>
+                            <td>En nodos intermedios de la red.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Procesamiento</td>
+                            <td>En el borde de la red.</td>
+                            <td>En nodos cercanos al borde.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Relación con Cloud</td>
+                            <td>Puede procesar localmente y enviar resultados.</td>
+                            <td>Puede actuar como intermediario entre Edge y Cloud.</td>
+                        </tr>
+
+                        <tr>
+                            <td>IoT</td>
+                            <td>Procesamiento próximo a sensores y dispositivos.</td>
+                            <td>Puede concentrar información de varios dispositivos.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Latencia</td>
+                            <td>Baja al procesar cerca del origen.</td>
+                            <td>También busca reducir el recorrido hacia la nube.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ARQUITECTURA -->
+        <section class="seccion fondo-azul-claro">
+            <div class="titulo-seccion">
+                <span>ARQUITECTURA</span>
+
+                <h2>Edge, Fog y Cloud trabajando juntos</h2>
+
+                <p>
+                    Estas tecnologías pueden complementarse dentro de una misma
+                    infraestructura.
+                </p>
+            </div>
+
+            <div class="arquitectura">
+
+                <article class="capa">
+                    <h3>Cloud Computing</h3>
+
+                    <p>
+                        Puede proporcionar almacenamiento centralizado,
+                        servicios, análisis y recursos de procesamiento.
+                    </p>
+                </article>
+
+                <article class="capa">
+                    <h3>Fog Computing</h3>
+
+                    <p>
+                        Los nodos intermedios pueden procesar, filtrar
+                        y administrar información antes de enviarla
+                        hacia la nube.
+                    </p>
+                </article>
+
+                <article class="capa">
+                    <h3>Edge / IoT</h3>
+
+                    <p>
+                        Los sensores y dispositivos generan información
+                        y pueden realizar procesamiento cerca de su origen.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- APLICACIONES -->
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <h2>¿Dónde se pueden utilizar?</h2>
+            </div>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>Industria</h3>
+
+                    <p>
+                        Procesamiento de información generada por sensores,
+                        máquinas y sistemas de automatización industrial.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Ciudades inteligentes</h3>
+                    <p>
+                        Sensores, sistemas de tráfico y otros dispositivos
+                        conectados pueden procesar información cerca del lugar
+                        donde se produce.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Transporte</h3>
+
+                    <p>
+                        Los sistemas de transporte conectados pueden necesitar
+                        analizar información rápidamente para responder a
+                        diferentes situaciones.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ASIDE -->
+        <aside class="dato">
+            <h3>Importante</h3>
+            <p>
+                Edge Computing y Fog Computing no buscan reemplazar al
+                Cloud Computing. Estas tecnologías pueden trabajar juntas
+                dentro de una misma arquitectura, distribuyendo el
+                procesamiento de los datos según las necesidades de cada
+                aplicación.
+            </p>
+        </aside>
+
+        <!-- RECURSOS -->
+        <section class="seccion">
+            <div class="titulo-seccion">
+
+                <span>RECURSOS</span>
+                <h2>Enlaces externos</h2>
+                <p>
+                    Si deseas ampliar la información sobre Edge Computing
+                    y Fog Computing, puedes consultar los siguientes recursos.
+                </p>
+            </div>
+
+            <div class="recursos">
+                <article>
+
+                    <h3>¿Qué es Edge Computing?</h3>
+                    <p>
+                        Información adicional sobre Edge Computing,
+                        sus características y funcionamiento.
+                    </p>
+                    <a href="https://telefonicatech.com/blog/edge-computing-que-es"
+                       target="_blank">
+                        Visitar sitio
+                    </a>
+                </article>
+
+                <article>
+                    <h3>Edge Computing y Fog Computing</h3>
+
+                    <p>
+                        Información sobre las diferencias y la relación
+                        entre Edge Computing, Fog Computing e IoT.
+                    </p>
+                    <a href="https://www.datacentermarket.es/mercado/edge-computing-y-fog-computing-la-computacion-se-acerca-a-los-usuarios-en-el-mundo-del-iot/"
+                       target="_blank">
+                        Visitar sitio
+                    </a>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-contenido">
+            <div>
+                <h3>EdgeFog Tech</h3>
+                <p>
+                    Sitio educativo sobre Edge Computing,
+                    Fog Computing e Internet de las Cosas.
+                </p>
+            </div>
+
+            <div>
+                <h4>Navegación</h4>
+                <a href="index.html">Inicio</a>
+                <a href="acercade.html">Acerca de</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div>
+                <h4>Redes sociales</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="footer-final">
+            <p>
+                © 2026 EdgeFog Tech | Parcial académico
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

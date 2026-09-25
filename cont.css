@@ -1,0 +1,486 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7faff;
+    color: #24364b;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background: white;
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 3px solid #1976d2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-imagen {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+    
+}
+
+.logo h2 {
+    color: #0d47a1;
+}
+
+.logo p {
+    color: #78909c;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #29445e;
+
+    font-weight: bold;
+
+    padding: 10px 17px;
+    border-radius: 7px;
+}
+
+nav a:hover,
+nav a.activo {
+    background: #1565c0;
+    color: white;
+}
+
+
+/* =========================================
+   TÍTULO DE LA PÁGINA
+========================================= */
+
+.pagina-titulo {
+    padding: 70px 8%;
+
+    background: #eaf5ff;
+
+    text-align: center;
+}
+
+.pagina-titulo span {
+    color: #1976d2;
+
+    font-weight: bold;
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.pagina-titulo h1 {
+    color: #0d47a1;
+
+    font-size: 45px;
+
+    margin: 10px 0;
+}
+
+.pagina-titulo p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #52677b;
+}
+
+
+/* =========================================
+   ZONA DE CONTACTO
+========================================= */
+
+.zona-contacto {
+    max-width: 1150px;
+
+    margin: 60px auto;
+
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+
+    gap: 35px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.formulario {
+    background: white;
+
+    padding: 40px;
+
+    border: 1px solid #d9eafa;
+    border-radius: 14px;
+
+    box-shadow: 0 6px 25px #d9e4ee;
+}
+
+.formulario-titulo {
+    margin-bottom: 25px;
+}
+
+.formulario-titulo span {
+    color: #1976d2;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.formulario-titulo h2 {
+    color: #0d47a1;
+
+    font-size: 30px;
+
+    margin: 5px 0;
+}
+
+.formulario-titulo p {
+    color: #52677b;
+}
+
+
+/* =========================================
+   CAMPOS DEL FORMULARIO
+========================================= */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+
+    color: #29445e;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #b7cfe5;
+    border-radius: 7px;
+
+    background: white;
+
+    color: #24364b;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid #90caf9;
+
+    border-color: #1976d2;
+}
+
+.campo small {
+    display: block;
+
+    color: #78909c;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+.checkbox input {
+    margin-top: 5px;
+}
+
+.checkbox label {
+    color: #52677b;
+}
+
+
+/* =========================================
+   BOTÓN ENVIAR
+========================================= */
+
+.boton-enviar {
+    width: 100%;
+
+    background: #1565c0;
+    color: white;
+
+    padding: 14px;
+
+    border: 0;
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background: #0d47a1;
+}
+
+
+/* =========================================
+   INFORMACIÓN DE CONTACTO
+========================================= */
+
+.contacto-aside {
+    background: #1565c0;
+    color: white;
+
+    padding: 35px;
+
+    border-radius: 14px;
+}
+
+.contacto-aside h2 {
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+.contacto-aside > p {
+    color: #e3f2fd;
+}
+
+.contacto-aside hr {
+    border: 0;
+
+    border-top: 1px solid #70a9df;
+
+    margin: 25px 0;
+}
+
+
+/* =========================================
+   DATOS DE CONTACTO
+========================================= */
+
+.info-contacto {
+    margin-top: 22px;
+}
+
+.info-contacto h3 {
+    font-size: 18px;
+
+    margin-bottom: 4px;
+}
+
+.info-contacto p {
+    color: #e3f2fd;
+}
+
+
+/* =========================================
+   REDES SOCIALES
+========================================= */
+
+.redes {
+    margin-top: 5px;
+}
+
+.redes a {
+    display: block;
+
+    color: white;
+
+    margin: 7px 0;
+
+    text-decoration: none;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   NOTA
+========================================= */
+
+.nota {
+    background: #2878c4;
+
+    padding: 18px;
+
+    margin-top: 30px;
+
+    border-radius: 7px;
+}
+
+.nota strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.nota p {
+    color: #e3f2fd;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #082e5c;
+    color: white;
+
+    padding: 45px 8% 20px;
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+.footer-contenido h3,
+.footer-contenido h4 {
+    margin-bottom: 10px;
+}
+
+.footer-contenido p {
+    color: #bbd5ec;
+}
+
+.footer-contenido a {
+    display: block;
+
+    color: #bbd5ec;
+
+    text-decoration: none;
+
+    margin: 7px 0;
+}
+
+.footer-contenido a:hover {
+    color: white;
+
+    text-decoration: underline;
+}
+
+.footer-final {
+    border-top: 1px solid #496987;
+
+    margin-top: 30px;
+
+    padding-top: 15px;
+
+    text-align: center;
+
+    color: #bbd5ec;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pagina-titulo h1 {
+        font-size: 36px;
+    }
+
+    .zona-contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario {
+        padding: 25px;
+    }
+
+    .contacto-aside {
+        padding: 25px;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+    }
+
+}

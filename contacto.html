@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EdgeFog Tech | Contacto</title>
+
+    <link rel="stylesheet" href="../css/cont.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo de EdgeFog Tech" class="logo-imagen">
+            
+            <div>
+                <h2>EdgeFog Tech</h2>
+                <p>Computación más cerca de los datos</p>
+            </div>
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="acercade.html">
+                Acerca de
+            </a>
+
+            <a href="contacto.html" class="activo">
+                Contacto
+            </a>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <!-- TÍTULO DE LA PÁGINA -->
+        <section class="pagina-titulo">
+            <span>CONTACTO</span>
+            <h1>¿Tienes alguna pregunta?</h1>
+
+            <p>
+                Completa el formulario para comunicarte con nosotros
+                y realizar consultas relacionadas con Edge Computing,
+                Fog Computing e Internet de las Cosas.
+            </p>
+
+        </section>
+
+
+
+        <!-- ZONA DE CONTACTO -->
+        <section class="zona-contacto">
+            <!-- FORMULARIO -->
+            <article class="formulario">
+
+                <div class="formulario-titulo">
+                    <span>FORMULARIO</span>
+                    <h2>Envíanos un mensaje</h2>
+
+                    <p>
+                        Los campos marcados con * son obligatorios.
+                    </p>
+
+                </div>
+
+
+                <form id="formularioContacto"
+                      action="guardar.php"
+                      method="post">
+
+                    <!-- NOMBRE -->
+                    <div class="campo">
+
+                        <label for="nombre">
+                            Nombre completo *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ejemplo: Juan Pérez"
+                            minlength="3"
+                            maxlength="60"
+                            required
+                        >
+
+                        <small>
+                            Mínimo 3 caracteres.
+                        </small>
+                    </div>
+
+                    <!-- CORREO -->
+
+                    <div class="campo">
+                        <label for="correo">
+                            Correo electrónico *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            required
+                        >
+                        <small>
+                            Introduce un correo electrónico válido.
+                        </small>
+
+                    </div>
+
+                    <!-- TELÉFONO -->
+                    <div class="campo">
+                        <label for="telefono">
+                            Teléfono *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="6000-0000"
+                            pattern="[0-9]{4}-[0-9]{4}"
+                            required
+                        >
+                        <small>
+                            Formato requerido: 6000-0000.
+                        </small>
+
+                    </div>
+
+                    <!-- TEMA -->
+                    <div class="campo">
+                        <label for="asunto">
+                            Tema de interés *
+                        </label>
+
+                        <select
+                            id="asunto"
+                            name="asunto"
+                            required
+                        >
+
+                            <option value="">
+                                Selecciona una opción
+                            </option>
+
+                            <option value="edge">
+                                Edge Computing
+                            </option>
+
+                            <option value="fog">
+                                Fog Computing
+                            </option>
+
+                            <option value="iot">
+                                Internet de las Cosas
+                            </option>
+
+                            <option value="cloud">
+                                Cloud Computing
+                            </option>
+
+                            <option value="otro">
+                                Otro
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- MENSAJE -->
+                    <div class="campo">
+                        <label for="mensaje">
+                            Mensaje *
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="7"
+                            placeholder="Escribe aquí tu mensaje..."
+                            minlength="10"
+                            maxlength="500"
+                            required
+                        ></textarea>
+
+                        <small>
+                            Entre 10 y 500 caracteres.
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- CONFIRMACIÓN -->
+
+                    <div class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="terminos"
+                            name="terminos"
+                            required
+                        >
+                        <label for="terminos">
+                            Confirmo que los datos ingresados
+                            son correctos.
+                        </label>
+
+                    </div>
+
+                    <!-- BOTÓN -->
+
+                    <button type="submit"
+                            class="boton-enviar">
+                        Enviar mensaje
+
+                    </button>
+                </form>
+            </article>
+
+
+            <!-- ASIDE -->
+
+            <aside class="contacto-aside">
+
+                <h2>Información de contacto</h2>
+                <p>
+                    Puedes utilizar este formulario para realizar
+                    consultas relacionadas con el contenido presentado
+                    en nuestro sitio web.
+                </p>
+
+
+                <hr>
+
+                <div class="info-contacto">
+                    <h3>Correo</h3>
+
+                    <p>
+                        contacto@edgefogtech.com
+                    </p>
+
+                </div>
+
+
+                <div class="info-contacto">
+                    <h3>Ubicación</h3>
+
+                    <p>
+                        Panamá
+                    </p>
+
+                </div>
+
+
+                <div class="info-contacto">
+                    <h3>Redes sociales</h3>
+                    <div class="redes">
+
+                        <a href="#" target="_blank">
+                            Instagram
+                        </a>
+
+                        <a href="#" target="_blank">
+                            YouTube
+                        </a>
+
+                        <a href="#" target="_blank">
+                            LinkedIn
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="nota">
+                    <strong>Nota</strong>
+
+                    <p>
+                        Esta página forma parte de un parcial
+                        académico sobre Edge y Fog Computing.
+                    </p>
+                </div>
+            </aside>
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-contenido">
+            <div>
+                <h3>EdgeFog Tech</h3>
+
+                <p>
+                    Sitio educativo sobre Edge Computing,
+                    Fog Computing e Internet de las Cosas.
+                </p>
+
+            </div>
+
+
+
+            <div>
+                <h4>Navegación</h4>
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="acercade.html">
+                    Acerca de
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+            </div>
+
+
+
+            <div>
+
+                <h4>Redes sociales</h4>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    YouTube
+                </a>
+
+                <a href="#">
+                    LinkedIn
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-final">
+
+            <p>
+                © 2026 EdgeFog Tech | Parcial académico
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
